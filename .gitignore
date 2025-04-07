@@ -1,0 +1,25 @@
+# Java
+*.class
+*.jar
+*.war
+*.log
+target/
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Node / React
+node_modules/
+build/
+.env
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

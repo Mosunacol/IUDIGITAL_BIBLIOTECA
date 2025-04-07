@@ -1,0 +1,57 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: library
+
+  r2dbc:
+    url: r2dbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:library}
+    username: "${DB_USER:monica}"  # Usa 'postgres' por defecto si DB_USER no está definido
+    password: "${DB_PASS:1234}"  # Usa 'postgres' por defecto si DB_PASS no está definido
+
+
+logging:
+  level:
+    org.springframework.r2dbc.core: DEBUG   # Muestra las consultas ejecutadas
+    io.r2dbc.postgresql.QUERY: DEBUG       # Muestra las consultas detalladas de PostgreSQL
+    io.r2dbc.postgresql.PARAM: DEBUG
+    org.springframework.web: DEBUG
+    reactor.netty.http.server: DEBUG
+
+
+entries:
+  reactive-web:
+    base-url: "${BASE_PATH:/product/api/v1}"
+    author:
+      create: "/author/create"
+      update: "/author/update/{id}"
+      search: "/author/search"
+      all-authors: "/author/all"
+      detail: "/author/detail"
+    user:
+      login: "/auth/userlogin"
+      register: "/register/user"
+    book:
+      create: "/book/create"
+      search: "/book/search"
+      detail: "/book/detail"
+      delete: "book/delete"
+    loan:
+      create: "/book/rent"
+
+jwt:
+  secret: ${JWT_SECRET:MQOv69j_r8UH484-UZMr-8j7F0OskMBFESurTrg0hDM}
+  expiration: ${JWT_EXPIRATION:3600000}
+
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: "/swagger-ui.html"
+    operations-sorter: alpha
+    disable-swagger-default-url: true
+    try-it-out-enabled: true
+  show-actuator: true
+

@@ -1,0 +1,186 @@
+.book-detail-container {
+  border-radius: 20px;
+  justify-self: center;
+  margin-top: 10px;
+  width: 90%;
+  height: auto;
+  padding: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+}
+
+.book-title-a {
+  width: auto;
+  min-width: 300px;
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px #71bb9186;
+}
+
+.book-detail-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.book-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  padding-right: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 10px 10px 10px #71bb9186;
+  border-radius: 20px;
+  background-color: white;
+  max-height: 700px !important;
+}
+
+.book-image {
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 20px;
+}
+
+.book-right {
+  width: 57%;
+}
+
+.book-right-up {
+  width: 100%;
+  padding: 20px;
+  padding-left: 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: white;
+  text-align: left;
+  box-shadow: 10px 10px 10px #71bb9186;
+}
+
+.book-right p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.author-link {
+  display: block;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+
+.author-link:hover {
+  text-decoration: underline;
+}
+
+.book-summary {
+  padding: 20px;
+  padding-left: 40px;
+  background-color: white;
+  margin-top: 40px;
+  min-height: 200px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  text-align: left;
+  box-shadow: 10px 10px 10px #71bb9186;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.add-book-button-container {
+  display: flex;
+  position: flex;
+  gap: 20px;
+}
+
+.buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.add-book-button {
+  color: White;
+  box-shadow: 5px 5px 5px #71bb9186;
+  background-color: #71bb91;
+  padding: 7.5px 10px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  text-align: center;
+  border: none;
+  height: 40px;
+  margin-bottom: 20px !important;
+}
+
+.add-book-button:hover {
+  box-shadow: none;
+  font-weight: bolder;
+  background-color: #71bb91;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+}
+
+.modal-content {
+  display: flex;
+  background-color: white !important;
+  width: 40% !important;
+  padding: 20px;
+  border-radius: 15px !important;
+  text-align: center;
+  box-shadow: 10px 10px 10px #71bb9186;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif !important;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center !important;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-confirmar {
+  background-color: #71bb91;
+  color: white;
+  box-shadow: 5px 5px 5px #71bb9186;
+}
+
+.btn-cancelar {
+  background-color: #71bb91;
+  color: white;
+  box-shadow: 5px 5px 5px #71bb9186;
+}
+
+.author-container {
+  display: flex;
+}
+
+.modal-title {
+  font-weight: bold !important;
+}
